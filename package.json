@@ -1,0 +1,11 @@
+{
+  "name": "Real-time-Todolist",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "dependencies": {
+    "socket.io": "~1.4.5",
+    "express": "~4.13.4",
+    "ent": "~2.2.0"
+  }
+}

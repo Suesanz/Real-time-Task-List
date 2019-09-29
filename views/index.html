@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real-time app</title>
+
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Real-time app</h1>
+
+        <!-- The todolist -->
+        <ul id="todolist"></ul>
+
+        <!-- The form to add task -->
+        <form action="/" method="post" id="todolistForm">
+            <div class="form-group">
+                <label for="task">My next task?</label>
+                <input type="text" class="form-control input-lg" name="task" id="task" placeholder="Your next task..."
+                       autofocus required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" id="sendTask">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/todolist.js"></script>
+</body>
+</html>
